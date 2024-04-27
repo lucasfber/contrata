@@ -37,8 +37,10 @@ h1 {
   font-size: 6.4rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  line-height: 71px;
 }
 
-h1 span {
-  color: var(--blue-600);
+img {
+  display: block;
+  max-width: 100%;
 }

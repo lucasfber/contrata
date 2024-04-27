@@ -5,7 +5,7 @@
   margin: 0 auto;
 }
 
-.border {
+.b {
   border: 2px solid red;
 }
 
@@ -27,13 +27,13 @@
 }
 
 .btn-lg {
-  padding: 1.6rem 2.4rem;
-  font-size: 1.8rem;
+  padding: 2.2rem 3.2rem;
+  font-size: 1.9rem;
 }
 
 header {
-  height: 72px;
-  padding: 16px 0;
+  padding: 2rem 0;
+  border: 1px solid rgba(0, 31, 97, 0.1);
 }
 
 header .container {
@@ -45,7 +45,7 @@ header .container {
 header nav {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 4rem;
 }
 
 header nav ul {
@@ -56,12 +56,102 @@ header nav ul {
 
 header nav ul li a {
   font-size: 1.4rem;
-  padding: 8px 16px;
-  border-radius: 8px;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.8rem;
   transition: background-color 0.3s ease;
   color: var(--blue-600);
 }
 
 header nav ul li a:hover {
   background-color: rgba(0, 31, 97, 0.1);
+}
+
+.s-hero {
+  padding: 8.8rem 0;
+}
+
+.s-hero .container {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+
+.s-hero .text {
+  width: 100%;
+  max-width: 65rem;
+}
+
+.s-hero .text h1 {
+  margin-top: 2rem;
+  max-width: 63rem;
+  font-size: 75px;
+  line-height: 75px;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.s-hero .text h1 span {
+  position: relative;
+}
+
+.s-hero .text h1 span::before {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  bottom: 0.1em;
+  left: 0;
+  border-radius: 2em;
+  z-index: -1;
+  background-color: var(--blue-100);
+  height: 0.25em;
+}
+
+.s-hero .text p {
+  margin-top: 3.5rem;
+  max-width: 48rem;
+  font-size: 2.2rem;
+  color: var(--gray-300);
+}
+
+.s-hero .text .btn-cta {
+  margin-top: 4.5rem;
+}
+
+.s-hero .image {
+  position: relative;
+}
+
+.s-hero .image img {
+  width: 35rem;
+}
+
+.s-hero .image .resume-img,
+.s-hero .image .resume-file {
+  position: absolute;
+  width: 8.4rem;
+}
+
+.resume-file {
+  top: 3.3rem;
+  left: -5rem;
+  animation: floating 3s ease-in-out infinite;
+}
+
+.resume-img {
+  bottom: -43px;
+  right: -5rem;
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
