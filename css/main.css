@@ -31,6 +31,10 @@
   font-size: 1.9rem;
 }
 
+.bg-light-gray {
+  background-color: var(--bg-light-gray);
+}
+
 header {
   padding: 2rem 0;
   border: 1px solid rgba(0, 31, 97, 0.1);
@@ -154,4 +158,121 @@ header nav ul li a:hover {
   100% {
     transform: translateY(0);
   }
+}
+
+.s-services {
+  padding: 44px 0;
+}
+
+.section-text {
+  text-align: center;
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-text h2 {
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 4.8rem; /* 1.2 */
+  text-align: center;
+  color: #0f172a;
+}
+
+.section-text p {
+  margin-top: 1.6rem;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #64748b;
+}
+
+.s-services .services-list {
+  margin-top: 72px;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.s-testimonials {
+  padding: 44px 0;
+}
+
+.testimonials-list {
+  padding: 3.2rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 30rem);
+  gap: 32px;
+  place-content: center;
+  margin-top: 3.2rem;
+}
+
+footer {
+  background-color: var(--blue-600);
+  background-color: #1b242f;
+  padding-top: 8.8rem;
+  color: #fff;
+}
+
+footer p {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+footer .main-area {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 6.6rem;
+  gap: 16rem;
+}
+
+footer .main-area .left img {
+  margin-bottom: 24px;
+}
+
+footer .main-area .right {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex: 1;
+}
+
+footer .main-area .right li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+footer .main-area .right a {
+  color: #fff;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+footer .main-area .right img {
+  width: 1.6rem;
+}
+
+footer .copy-area {
+  padding: 4.4rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .social-links {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+footer .social-links img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+footer h6 {
+  font-size: 1.4rem;
+  margin-bottom: 2.4rem;
 }

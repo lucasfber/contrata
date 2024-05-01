@@ -8,10 +8,34 @@
   --blue-500: #002a86;
   --blue-600: #001f61;
 
+  --bg-light-gray: #f5f7fb;
   --gray-100: #303033;
   --gray-200: #404042;
   --gray-300: #767676;
   --gray-400: #6d6d6d;
+
+  /* CROCT
+    line-height: 1.6 
+    fsize: 14px
+  */
+  --gray-p: #64748b;
+
+  /* heading 
+    h3 - 18px
+    lin height: 1.2
+    font-weight: 500
+    Poppins
+  */
+  --gray-h3: #1e2f5a;
+
+  /* section heading 
+    h2
+    line-height: 48px
+    Poppins
+    #0F172A 
+    fsize: 40px
+    fweight: 500
+  */
 
   --main-font: "Inter", sans-serif;
   --secondary-font: "Poppins", sans-serif;

@@ -44,3 +44,7 @@ img {
   display: block;
   max-width: 100%;
 }
+
+span {
+  display: inline-block;
+}
