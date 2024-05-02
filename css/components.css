@@ -96,3 +96,103 @@
   align-items: center;
   gap: 0.2rem;
 }
+
+.pricing-card {
+  background-color: #fff;
+  border-radius: 1.6rem;
+  border: 1px solid #e5e7f0;
+  padding: 2.4rem;
+  width: 100%;
+  height: 616.8px;
+  max-width: 34.4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pricing-card-header {
+  margin-bottom: 4.4rem;
+  border-bottom: 1px solid #dfe9ff;
+  padding-bottom: 24px;
+}
+
+.pricing-card-header .most-popular {
+  position: absolute;
+  top: -1.8rem;
+  right: calc(50% - 115.66px / 2);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: #dfe9ff;
+  padding: 12px;
+  border-radius: 32px;
+  border: 1px solid #dfe9ff;
+  color: #808285;
+}
+
+.pricing-card-header h4 {
+  color: #1b242f;
+  font-size: 2.4rem;
+}
+
+.pricing-card-header p {
+  margin-top: 0.8rem;
+  color: #595f7a;
+  font-size: 1.4rem;
+}
+
+.pricing-card-body {
+  flex: 1;
+}
+
+.pricing-card-body .price {
+  margin-bottom: 2.4rem;
+}
+
+.pricing-card-body .price h5 {
+  font-size: 3.2rem;
+  color: #1b242f;
+}
+
+.pricing-card-body .price span {
+  color: #595f7a;
+  font-size: 1.4rem;
+}
+
+.pricing-card .benefits-list li {
+  margin-bottom: 16px;
+}
+
+.pricing-card .benefits-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.pricing-card .benefits-list li p {
+  font-size: 1.4rem;
+}
+
+.pricing-card .benefits-list li span {
+  padding: 4px;
+  background-color: rgb(106, 221, 178);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.pricing-card .benefits-list img {
+  width: 10px;
+  height: 10px;
+}
+
+.pricing-card-footer {
+  margin-top: 52px;
+}
+
+.pricing-card-footer button {
+  width: 100%;
+  font-size: 1.4rem;
+}

@@ -206,6 +206,18 @@ header nav ul li a:hover {
   margin-top: 3.2rem;
 }
 
+.pricing {
+  padding: 4.4rem 0;
+}
+
+.pricing-list {
+  margin-top: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
 footer {
   background-color: var(--blue-600);
   background-color: #1b242f;
