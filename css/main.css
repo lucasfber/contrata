@@ -18,12 +18,12 @@
 }
 
 .btn-primary {
-  background-color: var(--blue-100);
+  background-color: var(--primary-color);
   color: #fff;
 }
 
 .btn-primary:hover {
-  background-color: var(--blue-200);
+  background-color: var(--primary-color-hover);
 }
 
 .btn-lg {
@@ -63,7 +63,7 @@ header nav ul li a {
   padding: 0.8rem 1.6rem;
   border-radius: 0.8rem;
   transition: background-color 0.3s ease;
-  color: var(--blue-600);
+  color: var(--gray-text);
 }
 
 header nav ul li a:hover {
@@ -88,10 +88,10 @@ header nav ul li a:hover {
 .s-hero .text h1 {
   margin-top: 2rem;
   max-width: 63rem;
-  font-size: 75px;
+  font-size: 64px;
   line-height: 75px;
-  font-weight: 600;
-  color: var(--blue);
+  font-weight: 500;
+  color: #1b203d;
 }
 
 .s-hero .text h1 span {
@@ -107,15 +107,17 @@ header nav ul li a:hover {
   left: 0;
   border-radius: 2em;
   z-index: -1;
-  background-color: var(--blue-100);
+  background-color: var(--primary-color);
   height: 0.25em;
 }
 
 .s-hero .text p {
   margin-top: 3.5rem;
   max-width: 48rem;
-  font-size: 2.2rem;
-  color: var(--gray-300);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--gray-text-2);
+  line-height: 1.6;
 }
 
 .s-hero .text .btn-cta {
@@ -219,14 +221,11 @@ header nav ul li a:hover {
 }
 
 footer {
-  background-color: var(--blue-600);
-  background-color: #1b242f;
   padding-top: 8.8rem;
-  color: #fff;
+  color: var(--gray-text);
 }
 
 footer p {
-  color: #fff;
   font-size: 1.4rem;
 }
 
@@ -234,7 +233,7 @@ footer .main-area {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgb(76, 100, 217, 0.1);
   padding-bottom: 6.6rem;
   gap: 16rem;
 }
@@ -255,11 +254,16 @@ footer .main-area .right li:not(:last-child) {
 }
 
 footer .main-area .right a {
-  color: #fff;
   font-size: 1.4rem;
   display: flex;
   align-items: center;
   gap: 4px;
+  color: var(--gray-text);
+  transition: color 0.3s ease;
+}
+
+footer .main-area .right a:hover {
+  color: var(--primary-color);
 }
 
 footer .main-area .right img {

@@ -4,9 +4,20 @@
   padding: 16px;
 }
 
-.service img {
+.service-img {
+  display: flex;
+  background: rgba(76, 100, 217, 0.1);
+  /* background-color: #f0f2ff; */
+  /* background-color: #fff; */
+  align-items: center;
+  justify-content: center;
   width: 6.8rem;
   height: 6.8rem;
+  border-radius: 6px;
+}
+
+.service-img img {
+  width: 50%;
 }
 
 .service h3 {
@@ -124,11 +135,11 @@
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 500;
-  background-color: #dfe9ff;
+  background-color: var(--primary-color);
   padding: 12px;
   border-radius: 32px;
   border: 1px solid #dfe9ff;
-  color: #808285;
+  color: #fff;
 }
 
 .pricing-card-header h4 {
@@ -172,6 +183,7 @@
 
 .pricing-card .benefits-list li p {
   font-size: 1.4rem;
+  color: var(--gray-text);
 }
 
 .pricing-card .benefits-list li span {
