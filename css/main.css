@@ -76,6 +76,7 @@ header nav ul li a:hover {
 
 .s-hero {
   padding: 8.8rem 0;
+  overflow: hidden;
 }
 
 .s-hero .container {
@@ -298,9 +299,7 @@ footer h6 {
 }
 
 /* === RESPONSIVO === */
-.s-services,
-.s-testimonials,
-.pricing,
+
 footer {
   display: none;
 }
@@ -310,8 +309,12 @@ footer {
     /* background-color: red; */
   }
 
-  .s-hero {
-    overflow: hidden;
+  .s-hero .container {
+    gap: 10rem;
+  }
+
+  .s-hero .text {
+    max-width: 55rem;
   }
 
   .s-hero .image img {
@@ -359,9 +362,51 @@ footer {
   .s-hero .text p {
     margin: 3.5rem auto 0 auto;
   }
+
+  .s-services .services-list {
+    flex-wrap: wrap;
+    gap: 3.2rem;
+    justify-content: space-between;
+  }
+
+  .section-text h2 {
+    font-size: 3.2rem;
+  }
+
+  .section-text p {
+    font-size: 1.6rem;
+    max-width: 300px;
+    margin: 1.6rem auto 0 auto;
+  }
+
+  .service-img {
+    width: 5.8rem;
+    height: 5.8rem;
+  }
+
+  .testimonials-list {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    column-gap: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .testimonials-list {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    max-width: 50.2rem;
+  }
+
+  .testimonial-body {
+    margin-top: 3.2rem;
+  }
+
+  .rating img {
+    width: 32px;
+  }
 }
 
 @media screen and (max-width: 560px) {
@@ -387,6 +432,11 @@ footer {
 @media screen and (max-width: 375px) {
   .s-hero .text .btn-cta {
     margin-top: 3rem;
+  }
+
+  .testimonial-body p {
+    font-size: 1.5rem;
+    line-height: 1.5;
   }
 }
 
