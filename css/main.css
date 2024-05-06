@@ -58,6 +58,10 @@ header nav ul {
   gap: 2.4rem;
 }
 
+.btn-menu {
+  display: none;
+}
+
 header nav ul li a {
   font-size: 1.4rem;
   padding: 0.8rem 1.6rem;
@@ -291,4 +295,107 @@ footer .social-links img {
 footer h6 {
   font-size: 1.4rem;
   margin-bottom: 2.4rem;
+}
+
+/* === RESPONSIVO === */
+.s-services,
+.s-testimonials,
+.pricing,
+footer {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    /* background-color: red; */
+  }
+
+  .s-hero {
+    overflow: hidden;
+  }
+
+  .s-hero .image img {
+    width: 30rem;
+  }
+
+  .s-hero .image .resume-img {
+    width: 5.4rem;
+    right: 2rem;
+  }
+
+  .s-hero .image .resume-file {
+    width: 6rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  header nav {
+    display: none;
+  }
+
+  .btn-menu {
+    display: block;
+  }
+
+  .btn-menu img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .s-hero .image {
+    display: none;
+  }
+
+  .s-hero .container {
+    gap: 0;
+    justify-content: center;
+  }
+
+  .s-hero .text {
+    flex: 1;
+    text-align: center;
+  }
+
+  .s-hero .text p {
+    margin: 3.5rem auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 560px) {
+  .s-hero {
+    padding: 4.4rem 0;
+  }
+
+  .s-hero .text h1 {
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+  .s-hero .text p {
+    max-width: 45rem;
+    font-size: 16px;
+  }
+
+  .btn-lg {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .s-hero .text .btn-cta {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .s-hero .text h1 {
+    font-size: 42px;
+  }
+
+  .s-hero .text .btn-cta {
+    margin-top: 3rem;
+  }
 }
