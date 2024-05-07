@@ -208,3 +208,9 @@
   width: 100%;
   font-size: 1.4rem;
 }
+
+@media screen and (max-width: 560px) {
+  .pricing-card {
+    max-height: 600px;
+  }
+}
