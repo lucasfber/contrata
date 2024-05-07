@@ -105,7 +105,7 @@ header nav ul li a:hover {
 
 .s-hero .text h1 span::before {
   content: "";
-  width: 100%;
+  width: 0;
   display: inline-block;
   position: absolute;
   bottom: 0.1em;
@@ -114,6 +114,16 @@ header nav ul li a:hover {
   z-index: -1;
   background-color: var(--primary-color);
   height: 0.25em;
+  animation: drawLine 0.5s 0.5s ease-in forwards;
+}
+
+@keyframes drawLine {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .s-hero .text p {

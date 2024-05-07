@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +26,9 @@
     <header>
       <div class="container">
         <div class="logo">
-          <img src="img/logo.svg" alt="Logo Contrata Maciço" />
+          <a href="index.html">
+            <img src="img/logo.svg" alt="Logo Contrata Maciço" />
+          </a>
         </div>
         <nav>
           <ul>
@@ -35,12 +38,12 @@
           </ul>
           <a href="#" class="btn btn-primary">Entre em contato</a>
         </nav>
-        <button class="btn-menu"><img src="img/menu.svg" alt="Menu"></button>
+        <button class="btn-menu"><img src="img/menu.svg" alt="Menu" /></button>
       </div>
     </header>
     <section class="s-hero">
       <div class="container">
-        <div class="text">
+        <div class="text" data-aos="fade-right">
           <h1>Te ajudamos a ser <span>contratado</span>!</h1>
           <p>
             Crie, melhore o seu currículo, dê um up no seu Linkedin e alcance
@@ -50,7 +53,7 @@
             >Quero saber como</a
           >
         </div>
-        <div class="image">
+        <div class="image" data-aos="fade-left">
           <img src="./img/hero.svg" alt="Image de uma entrevista de emprego" />
           <img
             class="resume-img"
@@ -69,7 +72,7 @@
     </section>
     <section class="s-services bg-light-gray">
       <div class="container">
-        <div class="section-text">
+        <div class="section-text" data-aos="fade-right">
           <h2>O que fazemos</h2>
           <p>
             We give developers the engine to build growth-optimized websites and
@@ -78,7 +81,7 @@
         </div>
         <ul class="services-list">
           <li>
-            <div class="service">
+            <div class="service" data-aos="fade-right">
               <div class="service-img">
                 <img src="./img/resume-edit.svg" alt="" />
               </div>
@@ -90,8 +93,10 @@
                 </p>
               </div>
             </div>
+          </li>
+
           <li>
-            <div class="service">
+            <div class="service" data-aos="fade-up">
               <div class="service-img">
                 <img src="./img/share.svg" alt="Compartilhando conhecimento" />
               </div>
@@ -105,28 +110,26 @@
             </div>
           </li>
           <li>
-            <div class="service">
+            <div class="service" data-aos="fade-left">
               <div class="service-img">
                 <img src="./img/linkedin-up.svg" alt="" />
               </div>
               <div class="service-text">
                 <h3>Consultoria para Linkedin</h3>
                 <p>
-                  Lorem ipsum dolor sit am adipisicing elit. Nemo
-                  dignissimos repudiandae temporibus.
+                  Lorem ipsum dolor sit am adipisicing elit. Nemo dignissimos
+                  repudiandae temporibus.
                 </p>
               </div>
             </div>
-          </li>
-          
           </li>
         </ul>
       </div>
     </section>
     <section class="s-testimonials">
       <div class="container">
-        <div class="section-text">
-          <h2>O que nossos clientes falam da gentes</h2>
+        <div class="section-text" data-aos="fade-right">
+          <h2>O que nossos clientes falam da gente</h2>
           <p>
             We give developers the engine to build growth-optimized websites and
             marketers the steering they need to drive results.
@@ -134,7 +137,7 @@
         </div>
         <ul class="testimonials-list">
           <li>
-            <div class="testimonial-card">
+            <div class="testimonial-card" data-aos="flip-right">
               <div class="testimonial-header">
                 <div class="info">
                   <img src="./img/avatar-1.svg" alt="" />
@@ -164,7 +167,7 @@
             </div>
           </li>
           <li>
-            <div class="testimonial-card">
+            <div class="testimonial-card" data-aos="flip-right">
               <div class="testimonial-header">
                 <div class="info">
                   <img src="./img/avatar-3.svg" alt="" />
@@ -196,7 +199,7 @@
             </div>
           </li>
           <li>
-            <div class="testimonial-card">
+            <div class="testimonial-card" data-aos="flip-right">
               <div class="testimonial-header">
                 <div class="info">
                   <img src="./img/avatar-2.svg" alt="" />
@@ -227,7 +230,7 @@
             </div>
           </li>
           <li>
-            <div class="testimonial-card">
+            <div class="testimonial-card" data-aos="flip-left">
               <div class="testimonial-header">
                 <div class="info">
                   <img src="./img/avatar-4.svg" alt="" />
@@ -258,7 +261,7 @@
             </div>
           </li>
           <li>
-            <div class="testimonial-card">
+            <div class="testimonial-card" data-aos="flip-left">
               <div class="testimonial-header">
                 <div class="info">
                   <img src="./img/avatar-5.svg" alt="" />
@@ -288,7 +291,7 @@
             </div>
           </li>
           <li>
-            <div class="testimonial-card">
+            <div class="testimonial-card" data-aos="flip-left">
               <div class="testimonial-header">
                 <div class="info">
                   <img src="./img/avatar-6.svg" alt="" />
@@ -323,7 +326,7 @@
     </section>
     <section class="pricing bg-light-gray">
       <div class="container">
-        <div class="section-text">
+        <div class="section-text" data-aos="fade-right">
           <h2>Nossos preços</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -331,7 +334,7 @@
           </p>
         </div>
         <div class="pricing-list">
-          <div class="pricing-card">
+          <div class="pricing-card" data-aos="fade-right">
             <div class="pricing-card-header">
               <h4>Básico</h4>
               <p>For freelancers & individuals, beginning their business</p>
@@ -365,7 +368,7 @@
               <button class="btn btn-primary">Quero esse</button>
             </div>
           </div>
-          <div class="pricing-card">
+          <div class="pricing-card" data-aos="zoom-in">
             <div class="pricing-card-header">
               <span class="most-popular">Mais popular</span>
               <h4>Pro</h4>
@@ -404,7 +407,7 @@
               <button class="btn btn-primary">Quero esse</button>
             </div>
           </div>
-          <div class="pricing-card">
+          <div class="pricing-card" data-aos="fade-left">
             <div class="pricing-card-header">
               <h4>Empresarial</h4>
               <p>
@@ -537,10 +540,19 @@
           </div>
         </div>
         <div class="copy-area">
-          <p class="copyright">&copy; 2024 Contrata Maciço. Todos os direitos reservados</p>
+          <p class="copyright">
+            &copy; 2024 Contrata Maciço. Todos os direitos reservados
+          </p>
           <p>Design e código por <strong>Lucas Bertoldo</strong></p>
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        disable: "mobile",
+      });
+    </script>
   </body>
 </html>
