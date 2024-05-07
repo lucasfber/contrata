@@ -279,7 +279,14 @@ footer .copy-area {
   padding: 4.4rem 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+
+footer p {
+  color: var(--gray-text);
+}
+
+footer .copy-area strong {
+  color: var(--primary-color);
 }
 
 footer .social-links {
@@ -299,10 +306,6 @@ footer h6 {
 }
 
 /* === RESPONSIVO === */
-
-footer {
-  display: none;
-}
 
 @media screen and (max-width: 1200px) {
   body {
@@ -332,6 +335,14 @@ footer {
 
   .pricing-list {
     gap: 1.6rem;
+  }
+
+  footer .main-area {
+    justify-content: initial;
+  }
+
+  footer .main-area .right {
+    max-width: 71.2rem;
   }
 }
 
@@ -398,6 +409,20 @@ footer {
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+
+  footer {
+    padding-top: 64px;
+  }
+
+  footer .main-area {
+    flex-direction: column;
+    gap: 48px;
+    padding-bottom: 44px;
+  }
+
+  footer .main-area .right {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -420,6 +445,19 @@ footer {
   .pricing-list {
     justify-content: center;
     gap: 4rem;
+  }
+
+  footer .main-area .right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 48px;
+  }
+
+  footer .copy-area {
+    padding: 34px 0 22px 0;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
   }
 }
 
@@ -449,6 +487,10 @@ footer {
   .pricing-list .pricing-card:nth-child(2) {
     margin-top: 20px;
   }
+
+  footer .copyright {
+    text-align: center;
+  }
 }
 
 @media (max-width: 375px) {
@@ -460,6 +502,18 @@ footer {
     font-size: 1.5rem;
     line-height: 1.5;
   }
+
+  footer {
+    padding-top: 54px;
+  }
+
+  footer .main-area .right {
+    column-gap: 16px;
+  }
+
+  footer .copyright {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -469,5 +523,13 @@ footer {
 
   .s-hero .text .btn-cta {
     margin-top: 3rem;
+  }
+
+  footer .main-area {
+    gap: 32px;
+  }
+
+  footer .main-area .right {
+    grid-template-columns: 1fr;
   }
 }
