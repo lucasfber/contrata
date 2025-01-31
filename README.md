@@ -2,6 +2,8 @@
 
 Esta landing page foi desenvolvida para divulgar os serviços de produção de currículos e consultoria da empresa **Contrata Maciço**. O projeto me permitiu aplicar na prática conceitos essenciais de **CSS e UX/UI**, reforçando minha experiência em design responsivo e animações interativas.
 
+Confira aqui a live demo: 🌐 [Live Demo Contrata](https://lucasfber.github.io/contrata/)
+
 A iniciativa surgiu como uma forma de consolidar os conhecimentos adquiridos nos cursos:
 
 📌 [UI Design para Iniciantes – Origamid](https://www.origamid.com/curso/ui-design-para-iniciantes/)  
